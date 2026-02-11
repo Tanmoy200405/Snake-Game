@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #0a0a0a;
+}
+
+#text {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a0a0a 100%);
+}
+
+#text h1 {
+  color: #00ff88;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00ff88;
+  letter-spacing: 2px;
+}
+
+#game-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding: 25px;
+  border: 3px solid #00ff88;
+  border-radius: 10px;
+  background-color: #1a1a2e;
+  width: fit-content;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+#heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #00ff88;
+}
+
+#heading h2 {
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+}
+
+#heading span {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+#canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #000000;
+  border: 2px solid #00ff88;
+  border-radius: 5px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  gap: 0;
+  background-color: #000000;
+  border: 1px solid #00ff88;
+}
+
+#grid > div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(247, 247, 247, 0.2);
+}
+
+#food {
+  height: 20px;
+  width: 20px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+#snake {
+  height: 20px;
+  width: 20px;
+  background-color: #00ff88;
+  box-shadow: 0 0 10px #00ff88;
+}
+#start-btn {
+  display: block;
+
+  margin: 0 auto;
+
+  padding: 10px 20px;
+
+  font-size: 1.2rem;
+
+  text-align: center;
+
+  color: #00ff88;
+
+  background-color: #1a1a2e;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+
+  transition: all 0.3s ease;
+}
+#reset-btn {
+  display: block;
+
+  margin: 0 auto;
+
+  padding: 10px 20px;
+
+  font-size: 1.2rem;
+
+  text-align: center;
+
+  color: #00ff88;
+
+  background-color: #1a1a2e;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+
+  transition: all 0.3s ease;    
+}
+
+
